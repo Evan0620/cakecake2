@@ -1,0 +1,16 @@
+﻿@page
+@model CakeShop.Views.Orders.CheckoutModel
+@{
+    ViewData["Title"] = "結帳";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>收件資訊</h4>
+        <hr />
+        <form asp-action="PlaceOrder" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </form>
+    </div>
+</div>
